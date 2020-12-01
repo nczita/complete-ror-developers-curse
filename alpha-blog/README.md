@@ -9,11 +9,11 @@ Instalation on most systems is trivial, just install rbenv, nodenv and required 
 
 ## TODO
 
-[ ] Create integeration tests
-  [ ] Users sign-in process 
-  [ ] New article creation process
-[ ] Write and RUN basic system test
-[ ] Deploy to Heroku
+- [ ] Create integeration tests
+  - [ ] Users sign-in process 
+  - [ ] New article creation process
+- [ ] Write and RUN basic system test
+- [ ] Deploy to Heroku
 
 ## Notes from lecture
 
