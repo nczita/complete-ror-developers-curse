@@ -1,24 +1,10 @@
-# README
+# ALPHA-BLOG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Categories controller and test
 
-Things you may want to cover:
+To generate tests:
 
-* Ruby version
+```
+bin/rails generate test_unit:scaffold category
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
