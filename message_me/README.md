@@ -1,24 +1,6 @@
-# README
+# Message Me
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## UI 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Semantic UI](https://semantic-ui.com)
+- [Semantic UI - gem](https://github.com/doabit/semantic-ui-sass)

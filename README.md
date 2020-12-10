@@ -1,7 +1,9 @@
 # The Complete Ruby on Rails Developer Course
 
 This the code written durring the course :
-**[The Complete Ruby on Rails Developer Course](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)** by Mashrur Hossain, Rob Percival, Codestars by Rob Percival. 
+**[The Complete Ruby on Rails Developer Course](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)** by Mashrur Hossain, Rob Percival, Codestars by Rob Percival.
+
+Code from lecture (written by presenters) is here https://github.com/udemyrailscourse.
 
 ## Instalation
 
