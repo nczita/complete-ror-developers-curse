@@ -1,3 +1,7 @@
 {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "emmet.includeLanguages": {
+        "html.erb": "html"
+    },
+    "emmet.triggerExpansionOnTab": true
 }
