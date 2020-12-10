@@ -8,3 +8,4 @@
 ## Tools
 
 - [emmet](https://emmet.io/)
+- [fonticon](https://gauger.io/fonticon/)
