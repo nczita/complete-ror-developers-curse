@@ -8,32 +8,15 @@
     <div class="ui fluid raised card chatbox">
       <div class="content">
         <div class="ui feed">
-          <div class="event">
-            <div class="label">
-              <i class="blue circular coffee icon"></i>
-            </div>
-            <div class="content">
-              <div class="summary">
-                You added Elliot Fu to the group <a>Coworkers</a>
+          <% @messages.each do |message| %>
+            <div class="event">
+              <div class="content">
+                <div class="summary">
+                  <em><%= message.user.username %></em>: <%= message.body %>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="event">
-            <div class="label">
-              <i class="orange circular coffee icon"></i>
-            </div>
-            <div class="content">
-              Hello World!
-            </div>
-          </div>
-          <div class="event">
-            <div class="label">
-              <i class="black circular coffee icon"></i>
-            </div>
-            <div class="content">
-              Trust me I am an cebula men!
-            </div>
-          </div>
+          <% end %>
         </div>
       </div>
       <div class="extra content">
@@ -52,15 +35,9 @@
     <div class="ui fluid raised card chatbox"> 
       <div class="content">
         <div class="ui inverted vertical menu">
-          <a class="item">
-            Lukasz
-          </a>
-          <a class="item">
-            Ania
-          </a>
-          <a class="item">
-            Paweł
-          </a>
+        <% @users.each do |user| %>
+          <%= link_to user.username, "#", class: "item" %>
+        <% end %>
         </div>
       </div>
     </div>
