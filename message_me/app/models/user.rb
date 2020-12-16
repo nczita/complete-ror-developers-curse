@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :messages
 
   validates :username, 
     presence: true,
@@ -6,5 +7,4 @@ class User < ApplicationRecord
     length: { minimum: 3, maximum: 45 }
 
   has_secure_password
-
 end
