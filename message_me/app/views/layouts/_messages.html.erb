@@ -1,0 +1,20 @@
+<div class="container">
+  <% if flash.notice %>
+    <div class="ui success message" role="alert">
+      <div class="header">
+        Great!!!
+      </div>
+      <i class="close icon"></i>
+      <%= flash.notice %>
+    </div>
+  <% end %>
+  <% if flash.alert %>
+    <div class="ui negative message" role="alert">
+      <div class="header">
+        Something went wrong ...
+      </div>
+      <i class="close icon"></i>
+      <%= flash.alert %>
+    </div>
+  <% end %>
+</div>
