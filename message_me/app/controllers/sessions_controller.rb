@@ -19,9 +19,11 @@ class SessionsController < ApplicationController
 
   # DELETE /login
   def destroy
+    if session[:user_id]
+      flash.notice = "Logged out"
+    end
     session[:user_id] = nil
-    flash.notice = "Logged out"
-    redirect_to root_path
+    redirect_to login_path
   end
 
   private
