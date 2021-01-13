@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
     if !@message.save
       flash.alert = "Message couldn't be added ..."
     end
-    redirect_to root_path
+    ActionCable.server.broadcast "chatroom_channel", foo: @message.body
   end
 
   private
