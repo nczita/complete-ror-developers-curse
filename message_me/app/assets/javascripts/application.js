@@ -23,6 +23,14 @@ scrollBottom = () => {
   }
 }
 
+submitMessage = () => {
+  $('#new_message').submit( (e) => {
+    setTimeout(() => {
+      $('#new_message')[0].reset();
+    }, 0);
+  });
+}
+
 $(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
   $('.message .close')
@@ -33,4 +41,5 @@ $(document).on('turbolinks:load', function() {
       ;
     });
   scrollBottom();
+  submitMessage();
 })

@@ -24,3 +24,7 @@
   height: 15em;
   overflow: auto;
 }
+
+#new_message .input > button {
+  display: none;
+}
