@@ -17,3 +17,4 @@ $ rails generate scaffold_controller welcome --no-helper --no-jbuilder
 - [Devise](https://github.com/heartcombo/devise#starting-with-rails)
 - [Bootstrap](https://getbootstrap.com/)
   - https://www.mashrurhossain.com/blog/rails6bootstrap4
+- [Devise Bootstrap Views](https://github.com/hisea/devise-bootstrap-views)
