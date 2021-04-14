@@ -18,3 +18,5 @@ $ rails generate scaffold_controller welcome --no-helper --no-jbuilder
 - [Bootstrap](https://getbootstrap.com/)
   - https://www.mashrurhossain.com/blog/rails6bootstrap4
 - [Devise Bootstrap Views](https://github.com/hisea/devise-bootstrap-views)
+- [IEX Finance API](https://github.com/dblock/iex-ruby-client)
+  - https://iexcloud.io/
