@@ -5,8 +5,9 @@
       "useBundler": false
     }
   },
-"ruby.format": "rubocop",
-"ruby.intellisense": "rubyLocate",
-"ruby.interpreter.commandPath": "/home/lukas/.rbenv/versions/2.6.5/bin/ruby",
-"ruby.useLanguageServer": true // use rubocop for formatting
+  "ruby.format": "rubocop",
+  "ruby.intellisense": "rubyLocate",
+  "ruby.interpreter.commandPath": "/home/lukas/.rbenv/versions/2.6.5/bin/ruby",
+  "ruby.useLanguageServer": true,
+  "editor.tabSize": 2
 }
