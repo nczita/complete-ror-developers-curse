@@ -11,3 +11,7 @@ $ rails generate controller welcome index
 
 $ rails generate scaffold_controller welcome --no-helper --no-jbuilder
 ```
+
+## Libs
+
+- [Devise](https://github.com/heartcombo/devise#starting-with-rails)
