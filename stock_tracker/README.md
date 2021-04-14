@@ -4,12 +4,18 @@ This is Stock Tracker Social Media App sections from: The Complete Ruby on Rails
 
 ## Generators
 
+Create controller:
 ```
 $ rails generate controller welcome index
 
 # OR with all CRUD operations
 
 $ rails generate scaffold_controller welcome --no-helper --no-jbuilder
+```
+
+Create model:
+```
+rails g model Stock ticker:string name:string last_price:decimal
 ```
 
 ## Libs
