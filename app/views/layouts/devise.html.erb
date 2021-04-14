@@ -16,8 +16,14 @@
     <%= render 'layouts/navigation' %>
 
     <div class="container">
-      <!-- prettier-ignore -->
-      <%= yield %>
+      <div class="devise">
+        <div class="row">
+          <div class="col-6">
+            <!-- prettier-ignore -->
+            <%= yield %>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
