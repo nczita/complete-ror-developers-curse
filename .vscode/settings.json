@@ -1,0 +1,12 @@
+{
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": false
+    }
+  },
+"ruby.format": "rubocop",
+"ruby.intellisense": "rubyLocate",
+"ruby.interpreter.commandPath": "/home/lukas/.rbenv/versions/2.6.5/bin/ruby",
+"ruby.useLanguageServer": true // use rubocop for formatting
+}
