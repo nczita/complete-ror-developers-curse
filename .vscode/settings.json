@@ -9,5 +9,8 @@
   "ruby.intellisense": "rubyLocate",
   "ruby.interpreter.commandPath": "/home/lukas/.rbenv/versions/2.6.5/bin/ruby",
   "ruby.useLanguageServer": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.html.erb": "html"
+  }
 }
