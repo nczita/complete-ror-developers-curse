@@ -5,6 +5,7 @@ This is Stock Tracker Social Media App sections from: The Complete Ruby on Rails
 ## Generators
 
 Create controller:
+
 ```
 $ rails generate controller welcome index
 
@@ -14,8 +15,15 @@ $ rails generate scaffold_controller welcome --no-helper --no-jbuilder
 ```
 
 Create model:
+
 ```
-rails g model Stock ticker:string name:string last_price:decimal
+$ rails g model Stock ticker:string name:string last_price:decimal
+```
+
+Edit/create credentials:
+
+```
+$ rails credentials:edit
 ```
 
 ## Libs
@@ -26,3 +34,7 @@ rails g model Stock ticker:string name:string last_price:decimal
 - [Devise Bootstrap Views](https://github.com/hisea/devise-bootstrap-views)
 - [IEX Finance API](https://github.com/dblock/iex-ruby-client)
   - https://iexcloud.io/
+
+## Readings
+
+- https://towardsdatascience.com/leaking-secrets-in-web-applications-46357831b8ed
