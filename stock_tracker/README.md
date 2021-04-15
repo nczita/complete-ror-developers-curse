@@ -40,6 +40,7 @@ $ rails generate controller users my_portfolio
 - [Devise Bootstrap Views](https://github.com/hisea/devise-bootstrap-views)
 - [IEX Finance API](https://github.com/dblock/iex-ruby-client)
   - https://iexcloud.io/
+- [Font Awesome Rails](https://github.com/bokmann/font-awesome-rails)
 
 ## Readings
 
