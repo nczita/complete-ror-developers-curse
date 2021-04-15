@@ -1,0 +1,19 @@
+<div class="d-inline-block">
+  <!-- prettier-ignore -->
+  <%= render 'layouts/messages' %>
+</div>
+
+<% if @stock %>
+<div class="card card-header d-inline-block">
+  <!-- prettier-ignore -->
+  <strong>Symbol: </strong>
+  <!-- prettier-ignore -->
+  <%= @stock.ticker %>
+  <strong>Name: </strong>
+  <!-- prettier-ignore -->
+  <%= @stock.name %>
+  <strong>Price: </strong>
+  <!-- prettier-ignore -->
+  <%= @stock.last_price %>
+</div>
+<% end %>

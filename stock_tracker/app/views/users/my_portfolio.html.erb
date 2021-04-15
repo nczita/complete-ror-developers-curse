@@ -3,7 +3,7 @@
 <div class="pt-5">
   <h3>Search Stocks</h3>
   <!-- prettier-ignore -->
-  <%= form_tag search_stock_path, method: :get do %>
+  <%= form_tag search_stock_path, remote: true, method: :get do %>
   <div class="form-group row">
     <div class="col-sm-9 pr-0">
       <!-- prettier-ignore -->
@@ -18,17 +18,4 @@
   </div>
   <% end %>
 </div>
-<% if @stock %>
-<div class="card card-header d-inline-block">
-  <!-- prettier-ignore -->
-  <strong>Symbol: </strong>
-  <!-- prettier-ignore -->
-  <%= @stock.ticker %>
-  <strong>Name: </strong>
-  <!-- prettier-ignore -->
-  <%= @stock.name %>
-  <strong>Price: </strong>
-  <!-- prettier-ignore -->
-  <%= @stock.last_price %>
-</div>
-<% end %>
+<div id="result"></div>
