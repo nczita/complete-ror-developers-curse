@@ -26,6 +26,12 @@ Edit/create credentials:
 $ rails credentials:edit
 ```
 
+Create users controllers
+
+```
+$ rails generate controller users my_portfolio
+```
+
 ## Libs
 
 - [Devise](https://github.com/heartcombo/devise#starting-with-rails)
