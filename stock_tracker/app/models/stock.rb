@@ -5,6 +5,7 @@ class Stock < ApplicationRecord
       secret_token: Rails.application.credentials.iex_api[:secret_token],
       endpoint: Rails.application.credentials.iex_api[:base_url]
     )
-    client.price(ticker_symbol)
+    new(ticker: ticker_symbol, name: client.company(ticker_symbol).company_name,
+        last_price: client.price(ticker_symbol))
   end
 end
