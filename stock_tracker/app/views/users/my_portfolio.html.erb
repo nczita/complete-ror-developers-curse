@@ -9,7 +9,7 @@
       <!-- prettier-ignore -->
       <%= text_field_tag :stock, params[:stock], placeholder: "Stock ticker symbol", autofocus: true,  class: "form-control form-control-lg" %>
     </div>
-    <div class="col-sm-3 pl-0">
+    <div class="col-sm-1 pl-0">
       <!-- prettier-ignore -->
       <%= button_tag type: :submit, class: "btn btn-success btn-lg" do %>
         <%= fa_icon "search" %>
@@ -19,3 +19,7 @@
   <% end %>
 </div>
 <div id="result"></div>
+<!-- prettier-ignore -->
+<% if !@tracked_stocks.empty? %>
+  <%= render 'stocks/list' %>
+<% end %>
