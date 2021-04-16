@@ -32,6 +32,11 @@ Create users controllers
 $ rails generate controller users my_portfolio
 ```
 
+Create many2many UserStock model:
+```
+$ rails g resource UserStock user:references stock:references
+```
+
 ## Libs
 
 - [Devise](https://github.com/heartcombo/devise#starting-with-rails)
