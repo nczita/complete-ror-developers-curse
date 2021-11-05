@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   has_many :user_stocks
   has_many :stocks, through: :user_stocks
+  has_many :friendships
+  has_many :friends, through: :friendships
 
   validates_length_of :stocks, maximum: MAX_OF_STOCKS
 
