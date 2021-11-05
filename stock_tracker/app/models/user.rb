@@ -14,4 +14,10 @@ class User < ApplicationRecord
   def can_track_stock?(ticker_symbol)
     stocks.count < MAX_OF_STOCKS && !stocks.find_by(ticker: ticker_symbol)
   end
-end 
+
+  def full_name
+    return "#{first_name} #{last_name}" if first_name || last_name
+
+    'Anonymous'
+  end
+end

@@ -22,36 +22,14 @@
           <!-- prettier-ignore -->
           <%= link_to 'My Portfolio', my_portfolio_path, class: 'nav-link' %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item user-name">
+          <%= fa_icon 'user' %> <%= current_user.full_name %>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-          >
+        <li class="nav-item pl-2 pr-2">
+          <!-- prettier-ignore -->
+          <%= link_to(fa_icon("sign-out"), destroy_user_session_path, class: 'btn btn-xs btn-danger', method: :delete) %>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -65,12 +43,6 @@
           Search
         </button>
       </form>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <!-- prettier-ignore -->
-          <%= link_to(fa_icon("sign-out"), destroy_user_session_path, class: 'btn btn-xs btn-danger', method: :delete) %>
-        </li>
-      </ul>
       <% end %>
     </div>
   </div>
