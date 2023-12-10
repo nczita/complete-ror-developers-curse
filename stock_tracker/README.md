@@ -33,9 +33,18 @@ $ rails generate controller users my_portfolio
 ```
 
 Create many2many UserStock model:
+
 ```
 $ rails g resource UserStock user:references stock:references
 ```
+
+## Passwords
+
+Password for all users should be "example".
+
+> user_1 = User.find(1)
+> user_1.password = "example"
+> user_1.save
 
 ## Libs
 
