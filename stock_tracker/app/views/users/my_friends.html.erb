@@ -1,6 +1,24 @@
 <h1>My Friends</h1>
 <div class="pt-5">
+  <h3>Search Friends</h3>
   <!-- prettier-ignore -->
-  <% if !@friends.empty? %>
-    <%= render 'friends/list' %>
+  <%= form_tag search_friends_path, remote: true, method: :get do %>
+    <div class="form-group row">
+      <div class="col-sm-9 pr-0">
+        <!-- prettier-ignore -->
+        <%= text_field_tag :friend, params[:friend], placeholder: "Friend", autofocus: true,  class: "form-control form-control-lg" %>
+      </div>
+      <div class="col-sm-1 pl-0">
+        <!-- prettier-ignore -->
+        <%= button_tag type: :submit, class: "btn btn-success btn-lg" do %>
+          <%= fa_icon "search" %>
+        <% end %>
+      </div>
+    </div>
   <% end %>
+</div>
+<div id="result"></div>
+<!-- prettier-ignore -->
+<% if !@friends.empty? %>
+  <%= render 'friends/list' %>
+<% end %>
