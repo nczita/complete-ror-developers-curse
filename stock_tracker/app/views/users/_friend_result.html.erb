@@ -1,0 +1,23 @@
+<!-- prettier-ignore -->
+<% if alert || notice %>
+  <div class="d-inline-block">
+    <!-- prettier-ignore -->
+    <%= render 'layouts/messages' %>
+  </div>
+  <!-- prettier-ignore -->
+<% end %>
+<% if @friend %>
+  <div class="card card-header d-inline-block mb-3">
+    <!-- prettier-ignore -->
+    <strong>Email: </strong>
+    <!-- prettier-ignore -->
+    <%= @friend %>
+    <strong>First Name: </strong>
+    <!-- prettier-ignore -->
+    <%= @friend %>
+    <strong>Last Name: </strong>
+    <!-- prettier-ignore -->
+    <%= @friend %>
+    <%= link_to 'Follow friend?', '#', class: 'btn btn-xs btn-success', method: :post %>
+  </div>
+<% end %>
